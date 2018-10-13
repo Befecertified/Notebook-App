@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="notebook.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="notebook.js"></script>
+</head>
+<body>
+    <div id="container">
+        <section id="splash-screen">
+            <h1>Notes</h1>
+            <h3>Organize your life...</h3>
+        </section>
+        <main id="note-screen">
+            <header>
+                <h1>Notes</h1>
+            </header>
+            <ul id="notes">
+                <p class="blank"><em>No notes yet...</em></p>
+            </ul>
+            <button id="create" data-toggle="modal" data-target="#make-note">
+                <i class="fa fa-pencil-alt pencil"></i>
+            </button>
+            <div id="make-note" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Make Note</h4>
+                        </div>
+                        <div class="modal-body">
+                            <textarea id="note-maker" rows="10" placeholder="Type note here..."></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-brown" data-dismiss="modal" id="save">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

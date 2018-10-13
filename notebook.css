@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background: indianred;
+    font-size: 16px;
+    color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 2px;
+}
+#container{
+    width: 100%;
+    max-width: 400px;
+    min-height: 520px;
+    max-height: 640px;
+    overflow-y: auto;
+    margin: 80px auto;
+    background: #f2e6d9;
+    position: relative;
+}
+@media (max-width: 500px){
+    #container{
+        margin: 20px auto;
+    } 
+}
+@media (max-width: 400px){
+    #container{
+        margin: auto;
+        min-height: 600px;
+    } 
+}
+#splash-screen {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    margin: 0;
+}
+#splash-screen h1, #splash-screen h3 {
+    text-align: center;
+}
+#splash-screen h1 {
+    font-size: 28px;
+}
+#splash-screen h3 {
+    font-size: 20px;
+    font-style: italic;
+}
+header {
+    height: 50px;
+    background: #c68c53;
+    color: #e5e5e5;
+    margin: 5px;
+}
+header > h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 16px 30px;
+    margin: 0;
+}
+#create {
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    background: #cc9966;
+    padding: 12px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    outline: 0;
+}
+.pencil {
+    padding: 3.2px 0 0 1px;
+    color: #604020;
+}
+#note-screen {
+    display: none;
+}
+#notes {
+    margin: 5px;
+}
+#notes > p {
+    position: absolute;
+    bottom: 48%;
+    left: 30%;
+    right: 30%;
+    margin: 0;
+    text-align: center;
+}
+#notes .note {
+    background:#d9b38c;
+    color: #333;
+    /*margin: 10px;*/
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px dotted #bf8040;
+    padding: 0 2px;
+    /*border-radius: 4px;*/
+}
+#notes .note:last-of-type {
+    border-bottom: none;
+}
+#notes .note-grow {
+    height: auto;
+    transition: height 4s ease-in;
+}
+.note p {
+    padding: 9px;
+    font-size: 15px;
+    width: 92%;
+    line-height: 175%;
+    margin: 0;
+}
+.note i {
+    color: #604020;
+}
+.note .open-note, .note .close-note {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    bottom: 30%;
+    cursor: pointer;
+}
+.note .delete {
+    padding: 0 0 8px 10px;
+    cursor: pointer;
+}
+.note .edit {
+    float: right;
+    padding: 0 40px 8px 0;
+    cursor: pointer;
+}
+/*custom modal styling*/
+.modal {
+    position: absolute;
+}
+.modal-dialog {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    right: 10%;
+    margin: 10px;
+}
+
+textarea {
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 280px;
+    border: 1px solid #ac7339;
+    outline: 0;
+}
+textarea:focus {
+    border: 1.4px solid #ac7339;
+    background: #f9f2ec;
+}
+.btn-brown {
+    background: #bf8040;
+    color: #e5e5e5;
+    outline: 0;
+}
+.btn-brown:hover {
+    color: white;
+}
